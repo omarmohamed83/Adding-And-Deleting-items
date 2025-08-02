@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <div class="w-75 m-auto">
+    <label for="pn">Product Name</label>
+    <input type="text" placeholder="product name" id="pn" class="form-control my-3">
+
+    <label for="pp">Product Price</label>
+    <input type="number" placeholder="product price" id="pp" class="form-control my-3" >
+
+    <label for="pc">Product category</label>
+    <input type="text" placeholder="product category" id="pc" class="form-control my-3">
+
+    <label for="pd">Product Description</label>
+    <input type="text" placeholder="product Description" id="pd" class="form-control my-3">
+
+    <button class="btn btn-info btn-lg my-3" onclick="addNewProduct()" id="addButton">ADD</button>
+    <input  type="text" placeholder="search" class="form-control" id="searchInput" onkeyup="searchElement()">
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tableData">
+            
+
+        </tbody>
+
+    </table>
+
+
+
+    </div>
+
+    <script src="js/main.js"></script>
+   
+</body>
+</html>
